@@ -3,12 +3,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="/bower_components/modernizr/modernizr.js"></script>
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <title>StarFox Intergalactic Travel Agency</title>
   
 </head>
 <body>
-  <h1>Hello World </h1>
+ <div id="header_block"> 
+  <header>
+    <div id="logo"></div>
+    <h1 id="title" class="show-for-medium-up"><a href="#"><span id="sf">StarFox</span><span id="logo_intergalactic"> Intergalactic Travel Agency</span>
+        </a>
+      </h1>
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area show-for-small-only">
+          <li class="name">
+            <h1>
+              <a href="#">
+                <span id="logo_starfox">
+                  <strong>Star</strong>Fox
+                </span>
+              </a>
+            </h1>
+          </li>
+
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class ="top-bar-section">
+          <ul class="right">
+            <li class="active"><a href="#">Home</a>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Interstellar Travel</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+  </div>
+  <div id="content_block">
+    <div id="hero_banner">
+      <div class="row">
+        <div id="hero_banner_inner_container" class="row">
+         <div class="small-12 medium-12 large-8 columns">
+          <div id="hero_banner_left">
+            Text on the left
+          </div>
+        </div>
+        <div class="small-12 medium-12 large-4 columns">
+          <div id="hero_banner_right">
+            <div id="banner_ship">
+            <a href="#" id="find_out_more">
+           Find Out More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="quicklinks">
+    <div id="quicklinks_inner_container" class="row">
+      <div class="small-12 medium-12 large-4 columns">
+        <a href="#" class="quicklink">
+
+    
+
+
+
+  </div>
+
+
+  </div>
+
   
+  </div>
+  <div id="footer_block">
+    <p>UFO Graphics designed by fontawesome</p>
+  </div>
+
+  
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/foundation/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>

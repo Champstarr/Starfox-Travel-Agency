@@ -1,10 +1,29 @@
 
-  $gunmetal_grey: #232329;
+  @import "partials/settings";
+  @import "../bower_components/foundation/scss/foundation";
+  $main_teal: #8EC5C5;
 
-  body{
-    background: $gunmetal_grey;
-    color: Blue;
+header{
+  background-color: #8EC5C5;
+  background-image: url("/assets/header_bg.png");
+  div#logo{
+    background-image: url("/assets/logo.png");
+
+
   }
 
+  h1#title { 
+    text-align: center;
+    
+     a{  
+      color: black;
+      span#sf{ 
+        font-weight: bold;
 
+      }
 
+    }
+
+  }
+
+}

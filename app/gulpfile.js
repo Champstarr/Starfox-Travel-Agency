@@ -3,15 +3,16 @@ var sass = require('gulp-sass');
 
 gulp.task('styles', function () {
   return gulp.src('./sass/*.scss')
-      .pipe(sass())
-      .pipe(gulp.dest('./css'));
+  .pipe(sass())
+  .pipe(gulp.dest('./css'));
+
 });
 
-gulp.task('watch_styles', function () {
+gulp.task('watch_styles', function() {
   gulp.watch('./sass/*.scss', ['styles']);
   gulp.watch('*.html', notifyLiveReload);
   gulp.watch('css/*.css', notifyLiveReload);
-})
+});
 
 gulp.task('express', function() {
   var express = require('express');
@@ -32,9 +33,9 @@ function notifyLiveReload(event) {
 }
 
 var tinylr;
-gulp.task('livereload', function() {
+gulp.task('livereload', function(){
   tinylr = require('tiny-lr')();
   tinylr.listen(35729);
 });
 
-gulp.task('default', ['watch_styles','express','livereload']);
+gulp.task('default', ['styles', 'watch_styles','express','livereload']);
