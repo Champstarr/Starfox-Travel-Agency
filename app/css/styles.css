@@ -5575,3 +5575,7 @@ header {
 #content_block {
   background-color: #8EC5C5;
   font-weight: bold; }
+
+body {
+  color: red;
+  background-color: #8EC5C5; }

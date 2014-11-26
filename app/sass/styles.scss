@@ -2,7 +2,7 @@
   @import "partials/settings";
   @import "../bower_components/foundation/scss/foundation";
   $main_teal: #8EC5C5;
-
+  
 header{
   background-color: $main_teal;
   background-image: url("/assets/header_bg.png");
@@ -34,4 +34,9 @@ header{
 #content_block{
   background-color: $main_teal;
   font-weight: bold;
+}
+
+body{
+  color: red;
+  background-color: $main_teal;
 }
