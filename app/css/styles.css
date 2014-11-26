@@ -5559,9 +5559,19 @@ th.hide-for-touch {
 header {
   background-color: #8EC5C5;
   background-image: url("/assets/header_bg.png"); }
-  header h1#logo {
+  header div#logo {
+    height: 80px;
+    width: 160px;
+    margin: 0 auto;
+    background-image: url("/assets/logo.png");
+    background-repeat: no-repeat; }
+  header h1#title {
     text-align: center; }
-    header h1#logo a {
+    header h1#title a {
       color: black; }
-      header h1#logo a span#sf {
+      header h1#title a span#sf {
         font-weight: bold; }
+
+#content_block {
+  background-color: #8EC5C5;
+  font-weight: bold; }

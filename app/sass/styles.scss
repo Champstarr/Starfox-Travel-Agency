@@ -4,17 +4,20 @@
   $main_teal: #8EC5C5;
 
 header{
-  background-color: #8EC5C5;
+  background-color: $main_teal;
   background-image: url("/assets/header_bg.png");
   div#logo{
+    height: 80px;
+    width: 160px;
+    margin: 0 auto;
     background-image: url("/assets/logo.png");
+    background-repeat: no-repeat;
 
 
   }
 
   h1#title { 
     text-align: center;
-    
      a{  
       color: black;
       span#sf{ 
@@ -26,4 +29,9 @@ header{
 
   }
 
+}
+
+#content_block{
+  background-color: $main_teal;
+  font-weight: bold;
 }

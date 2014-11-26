@@ -1,1 +1,2 @@
 app/node_modules
+.gitignore app/bower_components
