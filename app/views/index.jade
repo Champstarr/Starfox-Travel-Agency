@@ -3,25 +3,24 @@ mixin render_pet(pet)
     | hello
     = pet
 
-extends ./layput.jade
+extends ./layout.jade
 
 block content 
   p test #{ 2 + 5}
   p
-  if (myname === "so annoying")
-    span ejs tags are annoying
-  else
-    | your name is #{myname}
+    if (myname === "so annoying")
+      span ejs tags are annoying
+    else
+      | your name is #{myname}
 
-  ul 
-    each pet in mypets
-      +render_pet(pet)
+    ul 
+      each pet in mypets
+        +render_pet(pet)
 
 block copyright
-  &copy; local bruddah 2014
+  | &copy; local bruddah 2014
 
-  block scripts
-    scripts(src="mootools.js")
+    
 
 
   
