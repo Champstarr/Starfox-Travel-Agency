@@ -1,5 +1,13 @@
-p hello #{5 + 2}
-p
+mixin render_pet(pet)
+  li
+    | hello
+    = pet
+
+extends ./layput.jade
+
+block content 
+  p test #{ 2 + 5}
+  p
   if (myname === "so annoying")
     span ejs tags are annoying
   else
@@ -7,7 +15,14 @@ p
 
   ul 
     each pet in mypets
-      li #{pet}
+      +render_pet(pet)
+
+block copyright
+  &copy; local bruddah 2014
+
+  block scripts
+    scripts(src="mootools.js")
+
 
   
 
